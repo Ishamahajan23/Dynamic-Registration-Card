@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: cadetblue;
+            height: 70px;
+            width: 100%;
+        }
+
+        header a {
+            text-decoration: none;
+            font-size: 2rem;
+            color: black;
+
+        }
+
+        #carts {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+
+        }
+
+        .job-cart {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 1rem;
+            text-align: center;
+            word-wrap: break-word;
+            gap: 20px;
+            margin: 20px auto;
+        }
+      
+        .buttons button {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            
+
+        }
+        .buttons button a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+        @media only screen and (min-width:350px) and (max-width:450px) {
+            header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                background-color: cadetblue;
+                height: 30px;
+                width: 100%;
+            }
+
+            header a {
+                text-decoration: none;
+                font-size: 1rem;
+                color: black;
+
+            }
+
+            #carts {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+
+            }
+
+            .job-cart {
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: 1rem;
+                gap: 10px;
+                margin: 20px auto;
+            }
+            .job-cart h1{
+                font-size: 1.3rem;
+
+            }
+            .job-cart p{
+                font-size: 1rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#">Home</a>
+        <a href="./cart.html">Add to Card</a>
+    </header>
+
+    <div id="carts">
+       
+    </div>
+
+</body>
+
+</html>
+<script type="module" src="index.js"></script>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: cadetblue;
+            height: 70px;
+            width: 100%;
+        }
+
+        header a {
+            text-decoration: none;
+            font-size: 2rem;
+            color: black;
+
+        }
+        form{
+            margin: 30px auto;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 400px;
+            height: 500px;
+            gap: 15px;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        input{
+            
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        button{
+            padding: 10px;
+            background-color: black;
+            color: white;
+            
+        }
+
+
+
+        @media only screen and (min-width:351px) and (max-width:450px) {
+            header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                background-color: cadetblue;
+                height: 30px;
+                width: 100%;
+            }
+
+            header a {
+                text-decoration: none;
+                font-size: 1rem;
+                color: black;
+
+            }
+
+            form{
+            margin: 30px auto;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: 300px;
+            gap: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        input{
+            
+            padding: 10px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        button{
+            padding: 10px;
+            background-color: black;
+            color: white;
+            
+        }
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="./index.html">Home</a>
+       
+    </header>
+    <!-- form section -->
+    <form action="" >
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter a name" name="name">
+        <label for="user-name">Username</label>
+        <input type="text" id="user-name" placeholder="Enter a Username" name="user-name">
+        <label for="email">Email</label>
+        <input type="email"  id="email" placeholder="Enter your Email" name="email" required>
+        <button type="submit"> Submit </button>
+    </form>
+</body>
+</html>
+<script type="module" src="cart.js"></script>
